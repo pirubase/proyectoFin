@@ -1,0 +1,53 @@
+﻿@model IEnumerable<proyectoFin.Models.t001_doctor>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+           @*  <th>
+                @Html.DisplayNameFor(model => model.f001_id)
+            </th> *@
+            <th>
+                @Html.DisplayNameFor(model => model.f001_nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f001_email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f001_password)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+           @*  <td>
+                @Html.DisplayFor(modelItem => item.f001_id)
+            </td> *@
+            <td>
+                @Html.DisplayFor(modelItem => item.f001_nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.f001_email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.f001_password)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new {  id=item.f001_id }) |
+                @Html.ActionLink("Details", "Details", new {  id=item.f001_id  }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.f001_id })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
