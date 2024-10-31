@@ -12,17 +12,38 @@
 <table class="table">
     <thead>
         <tr>
-           @*  <th>
-                @Html.DisplayNameFor(model => model.f001_id)
-            </th> *@
+            <th>
+                @Html.DisplayNameFor(model => model.f001_especialidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f001_cedula)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f001_usuario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f001_contrasena)
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.f001_nombre)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.f001_email)
+                @Html.DisplayNameFor(model => model.f001_genero)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.f001_password)
+                @Html.DisplayNameFor(model => model.f001_telefono)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f001_direccion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f001_departamento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f001_ciudad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f001_fechaNacimiento)
             </th>
             <th></th>
         </tr>
@@ -30,22 +51,43 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
-           @*  <td>
-                @Html.DisplayFor(modelItem => item.f001_id)
-            </td> *@
+            <td>
+                @Html.DisplayFor(modelItem => item.f001_especialidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.f001_cedula)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.f001_usuario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.f001_contrasena)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.f001_nombre)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.f001_email)
+                @Html.DisplayFor(modelItem => item.f001_genero)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.f001_password)
+                @Html.DisplayFor(modelItem => item.f001_telefono)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new {  id=item.f001_id }) |
-                @Html.ActionLink("Details", "Details", new {  id=item.f001_id  }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.f001_id })
+                @Html.DisplayFor(modelItem => item.f001_direccion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.f001_departamento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.f001_ciudad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.f001_fechaNacimiento)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new {  id=item.f001_id  }) |
+                @Html.ActionLink("Details", "Details", new { id=item.f001_id  }) |
+                @Html.ActionLink("Delete", "Delete", new {  id=item.f001_id  })
             </td>
         </tr>
 }

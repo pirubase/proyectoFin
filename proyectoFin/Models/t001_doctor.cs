@@ -12,16 +12,17 @@ namespace proyectoFin.Models
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
-
         public ObjectId f001_id { get; set; }
-
-        [Display(Name = "Nombre")]
+        public string f001_especialidad { get; set; }
+        public int f001_cedula { get; set; }
+        public string f001_usuario { get; set; }
+        public string f001_contrasena { get; set; }  // Hash
         public string f001_nombre { get; set; }
-
-        [Display(Name = "Correo electronico")]
-        public string f001_email { get; set; }
-
-        [Display(Name = "Contraseña")]
-        public  string f001_password { get; set; }
+        public string f001_genero { get; set; }
+        public int f001_telefono { get; set; }
+        public string f001_direccion { get; set; }
+        public string f001_departamento { get; set; }
+        public string f001_ciudad { get; set; }
+        public string f001_fechaNacimiento { get; set; }
     }
 }

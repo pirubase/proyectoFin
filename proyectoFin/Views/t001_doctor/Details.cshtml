@@ -11,26 +11,74 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.f001_especialidad)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.f001_especialidad)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.f001_cedula)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.f001_cedula)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.f001_usuario)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.f001_usuario)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.f001_contrasena)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.f001_contrasena)
+        </dd>
+        <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.f001_nombre)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.f001_nombre)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.f001_email)
+            @Html.DisplayNameFor(model => model.f001_genero)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.f001_email)
+            @Html.DisplayFor(model => model.f001_genero)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.f001_password)
+            @Html.DisplayNameFor(model => model.f001_telefono)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.f001_password)
+            @Html.DisplayFor(model => model.f001_telefono)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.f001_direccion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.f001_direccion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.f001_departamento)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.f001_departamento)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.f001_ciudad)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.f001_ciudad)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.f001_fechaNacimiento)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.f001_fechaNacimiento)
         </dd>
     </dl>
 </div>
 <div>
-    @Html.ActionLink("Edit", "Edit", new {  id = Model.f001_id  }) |
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
     <a asp-action="Index">Back to List</a>
 </div>

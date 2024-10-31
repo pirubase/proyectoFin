@@ -1,0 +1,131 @@
+﻿@model IEnumerable<proyectoFin.Models.t002_pacientes>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.f002_cedula)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f002_esExtranjero)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f002_nacionalidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f002_usuario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f002_contrasena)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f002_nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f002_genero)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f002_telefono)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f002_direccion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f002_departamento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f002_ciudad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f002_fechaNacimiento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f002_tipoSangre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f002_mesesEmbarazo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f002_fechaUltimaEcografia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f002_estadoCivil)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f002_alergias)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.f002_cedula)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.f002_esExtranjero)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.f002_nacionalidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.f002_usuario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.f002_contrasena)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.f002_nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.f002_genero)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.f002_telefono)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.f002_direccion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.f002_departamento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.f002_ciudad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.f002_fechaNacimiento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.f002_tipoSangre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.f002_mesesEmbarazo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.f002_fechaUltimaEcografia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.f002_estadoCivil)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.f002_alergias)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

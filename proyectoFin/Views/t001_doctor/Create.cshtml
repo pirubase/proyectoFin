@@ -6,31 +6,66 @@
 
 <h1>Create</h1>
 
-<h4> ViewBag.msg</h4>
+<h4>t001_doctor</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create" method="post">
+        <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-           @*  <div class="form-group">
-                <label asp-for="f001_id" class="control-label"></label>
-                <input asp-for="f001_id" class="form-control" />
-                <span asp-validation-for="f001_id" class="text-danger"></span>
-            </div> *@
+            <div class="form-group">
+                <label asp-for="f001_especialidad" class="control-label"></label>
+                <input asp-for="f001_especialidad" class="form-control" />
+                <span asp-validation-for="f001_especialidad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="f001_cedula" class="control-label"></label>
+                <input asp-for="f001_cedula" class="form-control" />
+                <span asp-validation-for="f001_cedula" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="f001_usuario" class="control-label"></label>
+                <input asp-for="f001_usuario" class="form-control" />
+                <span asp-validation-for="f001_usuario" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="f001_contrasena" class="control-label"></label>
+                <input asp-for="f001_contrasena" class="form-control" />
+                <span asp-validation-for="f001_contrasena" class="text-danger"></span>
+            </div>
             <div class="form-group">
                 <label asp-for="f001_nombre" class="control-label"></label>
                 <input asp-for="f001_nombre" class="form-control" />
                 <span asp-validation-for="f001_nombre" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="f001_email" class="control-label"></label>
-                <input asp-for="f001_email" class="form-control" />
-                <span asp-validation-for="f001_email" class="text-danger"></span>
+                <label asp-for="f001_genero" class="control-label"></label>
+                <input asp-for="f001_genero" class="form-control" />
+                <span asp-validation-for="f001_genero" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="f001_password" class="control-label"></label>
-                <input asp-for="f001_password" class="form-control" />
-                <span asp-validation-for="f001_password" class="text-danger"></span>
+                <label asp-for="f001_telefono" class="control-label"></label>
+                <input asp-for="f001_telefono" class="form-control" />
+                <span asp-validation-for="f001_telefono" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="f001_direccion" class="control-label"></label>
+                <input asp-for="f001_direccion" class="form-control" />
+                <span asp-validation-for="f001_direccion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="f001_departamento" class="control-label"></label>
+                <input asp-for="f001_departamento" class="form-control" />
+                <span asp-validation-for="f001_departamento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="f001_ciudad" class="control-label"></label>
+                <input asp-for="f001_ciudad" class="form-control" />
+                <span asp-validation-for="f001_ciudad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="f001_fechaNacimiento" class="control-label"></label>
+                <input asp-for="f001_fechaNacimiento" class="form-control" />
+                <span asp-validation-for="f001_fechaNacimiento" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

@@ -1,0 +1,48 @@
+﻿@model proyectoFin.Models.t006_notificaciones
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>t006_notificaciones</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="f006_fechaEnvio" class="control-label"></label>
+                <input asp-for="f006_fechaEnvio" class="form-control" />
+                <span asp-validation-for="f006_fechaEnvio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="f006_emailDestinatario" class="control-label"></label>
+                <input asp-for="f006_emailDestinatario" class="form-control" />
+                <span asp-validation-for="f006_emailDestinatario" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="f006_asuntoCorreo" class="control-label"></label>
+                <input asp-for="f006_asuntoCorreo" class="form-control" />
+                <span asp-validation-for="f006_asuntoCorreo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="f006_mensajeCorreo" class="control-label"></label>
+                <input asp-for="f006_mensajeCorreo" class="form-control" />
+                <span asp-validation-for="f006_mensajeCorreo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
